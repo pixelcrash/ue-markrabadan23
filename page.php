@@ -4,7 +4,7 @@
   <?php get_template_part('parts/main', 'navigation'); ?>
 </header>
 
-<main class="text">
+<main class="page">
   <?php the_content(); ?>
 </main>
 
