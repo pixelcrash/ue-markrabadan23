@@ -8,10 +8,11 @@
   );
   $ps = get_posts($args);
   if($ps):
+  $ctn = 1; 
 ?>
 <ul>
   <?php foreach($ps as $p): ?>
-  <li><a href="">(1) project one <?php var_dump($p); ?></a></li>
+  <li><a href="">(<?=$ctn; ?>) <?php echo get_the_title($p); ?></a></li>
   <?php endforeach; ?>
 </ul>
 
