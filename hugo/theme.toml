@@ -1,0 +1,13 @@
+name = "mbam"
+license = "MIT"
+licenselink = ""
+description = "Minimal Portfolio Theme"
+homepage = ""
+demosite = ""
+tags = ["portfolio"]
+features = []
+min_version = "0.20"
+
+[author]
+  name = "Georg Kettele"
+  homepage = "https://georgkettele.com"

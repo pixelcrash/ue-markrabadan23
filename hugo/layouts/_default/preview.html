@@ -1,0 +1,33 @@
+<article class="uk-container uk-container-large" >
+	<hr>
+	<div class="uk-grid">
+		
+		<div class="uk-width-1-4">
+			<h1>preview <a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
+		</div>
+		
+		<div class="uk-width-1-4">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur libero inventore suscipit esse distinctio fugit facere illo consequatur? Alias, tenetur reiciendis! Ut corporis nam quos, nulla soluta pariatur doloremque reiciendis!
+			
+			{{ .Summary }}
+			{{ if .Truncated }}
+				<a href="{{ .Permalink }}">Read more...</a>
+			{{ end }}
+			
+		</div>
+		
+		<div class="uk-width-1-4">
+			<h3>Tags</h3>
+			{{ range .Params.tags }}
+			<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+			{{ end }}
+		</div>
+		
+		<div class="uk-width-1-4">
+			Fotos
+		</div>
+	</div>	
+		
+
+</article>

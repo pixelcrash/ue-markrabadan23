@@ -1,0 +1,15 @@
+<article class="uk-width-1-2@s uk-width-1-1  work ">
+  <div class="grid-inside {{ if .Param "style" }} style-{{.Param "style" }} {{ end }}">
+    <a href="{{ .RelPermalink }}">
+      {{ with .Resources }}
+          {{ with .GetMatch "{cover.*,*.jpg,*.png,*.jpeg,*.gif}" }}
+               {{ $cover := .Resize "700x" }}
+               {{ with $cover }}
+                 <img src="{{ .Permalink }}" class="work-img"/>  
+               {{ end }}
+          {{ end }}
+      {{ end }}
+      <h2 style="display: block; text-align: left; width: 100%;">{{ .Title | markdownify }}</h2>  
+    </a> 
+  </div> 
+</article>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/makeup.css" | relURL }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css">
+	
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+	
+	<script src="{{ "js/masonry.pkgd.min.js" | relURL }}"></script>
+	<script src="{{ "js/uikit.js" | relURL }}"></script>
+	<script src="{{ "js/uikit-icon.js" | relURL }}"></script>
+	<script src="{{ "js/flickity.js" | relURL }}"></script>
+	
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+	
+</head>
+
+<body>
+	
+	{{ block "header" . }} 
+	
+		{{ partial "header" . }}
+	
+	{{ end }}
+
+	{{ block "main" . }} {{ end }}
+
+	
+	{{ block "footer" . }} 
+	
+	{{ partial "footer" . }}
+	
+	{{ end }}
+	
+	
+	
+</body>
+<script src="{{ "js/app.js" | relURL }}"></script>
+</html>

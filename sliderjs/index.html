@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+    <title>Swiper Slider</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.js"></script>
+</head>
+s
+<body class>
+    <!-- This is the  head navbar for the slider -->
+    <nav>Headline</nav>
+    <main class="slideshow">
+        <div class="slideshow__area">
+            <div class="slideshow__el swiper-container slideshow-type--scroll-3" data-type="scroll">
+                <div class="swiper-wrapper">
+                    <div class="slideshow__slide swiper-slide" data-index="0">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 1
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="3">
+                            <img src="data:images/landscape.png" data-srcset="images/landscape.png" data-orientation="landscape" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="1">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 2
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="0.8">
+                            <img src="data:images/2538_001-scaled.jpg" data-srcset="images/2538_001-scaled.jpg" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="2">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 3
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="1.5">
+                            <img src="data:images/Adesuwa-Aighewi-by-Mark-Rabadan-Collection-Issue-scaled-2560x2560-1.jpg" data-srcset=" images/Adesuwa-Aighewi-by-Mark-Rabadan-Collection-Issue-scaled-2560x2560-1.jpg" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="3">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 4
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="0.8">
+                            <img src="data:images/ADESUWA-BY-MARK-RABADAN-2-scaled.jpg" data-srcset="images/ADESUWA-BY-MARK-RABADAN-2-scaled.jpg" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="4">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 5
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="1.5">
+                            <img src="data:images/ADESUWA-BY-MARK-RABADAN-5.jpg" data-srcset="images/ADESUWA-BY-MARK-RABADAN-5.jpg" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="3">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 6
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="1.5">
+                            <img src="data:images/ADESUWA-BY-MARK-RABADAN-6.jpg" data-srcset="images/ADESUWA-BY-MARK-RABADAN-6.jpg " data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="6">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 7
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="0.8">
+                            <img src="data:images/ADESUWA-BY-MARK-RABADAN-7-scaled.jpg" data-srcset="images/ADESUWA-BY-MARK-RABADAN-7-scaled.jpg" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="7">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 8
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="0.5">
+                            <img src="data:images/portrait.png" data-srcset="images/portrait.png" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+
+
+                    <div class="slideshow__slide swiper-slide" data-index="8">
+                        <div class="caption">
+                            <!--caption is determined in here -->
+                            Caption 9
+                        </div>
+                        <!--data ratio is for scaling image in here -->
+                        <div class="responsive-img" data-ratio="1">
+                            <img src="data:images/square.png" data-srcset="images/square.png" data-sizes="auto" class="lazyload lazy-fade">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="js/app.js" async defer></script>
+    <footer>
+        <div class="control-bar">
+            <!-- This is the  footer for the slider -->
+            <div class="control-bar__segment control-bar__counter">
+                <span data-slideshow-counter></span>
+            </div>
+            <div class="control-bar__segment control-bar__title control-bar__title--trimmed">
+                <div data-slideshow-caption class="control-bar__title-inner"></div>
+            </div>
+            <div class="control-bar__segment control-bar__nav">
+                <div class="link-list">
+                    <a href="thumbs_171.html">View All</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

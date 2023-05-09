@@ -1,0 +1,10 @@
+{{ define "main" }}
+		{{ partial "gallery" . }} 
+{{ end }}
+
+{{ define "category" }}
+<div class="uk-grid">
+	<div class="uk-width-1-2"><span class="x-padding" id="img-caption">{{.Params.Category}}</span></div>
+	<div class="uk-width-1-2 uk-text-right"><span class="x-padding">{{.Title}}</span></div>
+</div> 
+{{ end }}

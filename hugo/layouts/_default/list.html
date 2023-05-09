@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+		<div class="list-work x-padding">
+			<div class="uk-grid">
+			{{ range first 99 ( where .Site.RegularPages "Type" "work" ) }}
+				{{ partial "partials/card" . }}
+			{{ end }}
+			</div>
+		</div>
+			
+		<div class="page-content" id="information">
+			{{ with .Site.GetPage "/info" }}{{ .Content }}{{ end }}
+		</div>
+
+{{ end }}

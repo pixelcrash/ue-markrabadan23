@@ -1,0 +1,11 @@
+{{ define "main" }}
+	<main>
+		<hr>TEST index.html</hr>
+		
+		{{ range  .Site.RegularPages where "Type" "projects" }}
+			<h1>TEST</h1>
+		{{ end }}
+		
+	</main>
+
+{{ end }}
