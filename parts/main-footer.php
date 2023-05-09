@@ -15,7 +15,7 @@
   <?php $i = get_post_thumbnail_id( $p ); ?>
   <?php $img = ue_get_image( $i ); ?>
   <li>
-    <?php ue_dump($img); ?>
+    <?php pre_dump($img); ?>
     <a href="<?php echo get_permalink( $p ); ?>" data-img="<?=$img['srcL']; ?>" data-style="">
       (<?=$ctn; ?>) <?php echo get_the_title($p); ?>
     </a>
