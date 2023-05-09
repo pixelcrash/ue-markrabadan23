@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
 
-
+page.php
 <header>
   <?php get_template_part('parts/main', 'navigation'); ?>
 </header>
