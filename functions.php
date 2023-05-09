@@ -1,11 +1,8 @@
 <?php
 
 require_once(get_template_directory().'/functions/navigations.php'); 
-
 require_once(get_template_directory().'/functions/cleanup.php'); 
-
 require_once(get_template_directory().'/functions/enqueues.php'); 
-
 
 function getJS($filename){
 	echo get_template_directory_uri() . "/magic/" . $filename . ".js";
