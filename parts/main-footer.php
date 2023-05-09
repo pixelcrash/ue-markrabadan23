@@ -12,7 +12,7 @@
 ?>
 <ul>
   <?php foreach($ps as $p): ?>
-  <li><a href="">(<?=$ctn; ?>) <?php echo get_the_title($p); ?></a></li>
+  <li><a href="">(<?=$ctn; ?>) <?php echo get_the_title($p); $ctn++;?></a></li>
   <?php endforeach; ?>
 </ul>
 
