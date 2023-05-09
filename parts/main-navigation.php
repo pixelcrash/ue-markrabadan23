@@ -3,5 +3,5 @@
 </div>
 
 <div class="top-right">
-  <a href="#">About / Info</a>
+  <a href="<?php echo get_permalink('72'); ?>"><?php echo get_the_title( '72' ); ?></a>
 </div>
