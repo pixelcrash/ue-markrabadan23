@@ -30,7 +30,7 @@ function ue_get_image( $attachment_id ) {
     $style = "landscape centered";
   else:
     $style = "portrait centered";
-  endif:
+  endif;
 	
 
 	return array(
@@ -49,7 +49,7 @@ function ue_get_image( $attachment_id ) {
 			'height' => $size['height'],
 			'orientation' => $orientation,
 			'ratio' => $ratio,
-      'style' => ( get_field('orientation_style', $attachment->ID) ) ? get_field('orientation_style', $attachment->ID) : $style;
+      'style' => ( get_field('orientation_style', $attachment->ID) ) ? get_field('orientation_style', $attachment->ID) : $style;  
 	);
 }
 
