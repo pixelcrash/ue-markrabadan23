@@ -1,7 +1,5 @@
 <?php get_header();  ?>
 
-
-page.php
 <header>
   <?php get_template_part('parts/main', 'navigation'); ?>
 </header>
@@ -13,6 +11,5 @@ page.php
 <footer>
   <?php get_template_part('parts/main', 'footer'); ?>
 </footer>
-
 
 <?php get_footer();  ?>
