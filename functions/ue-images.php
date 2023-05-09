@@ -32,6 +32,7 @@ function ue_get_image( $attachment_id ) {
     $style = "portrait centered";
   endif;
 	
+  $style = ( get_field('orientation_style', $attachment->ID) ) ? get_field('orientation_style', $attachment->ID) : $style;
 
 	return array(
 	    'alt' => get_post_meta( $attachment->ID, '_wp_attachment_image_alt', true ),
@@ -49,7 +50,7 @@ function ue_get_image( $attachment_id ) {
 			'height' => $size['height'],
 			'orientation' => $orientation,
 			'ratio' => $ratio,
-      'style' => ( get_field('orientation_style', $attachment->ID) ) ? get_field('orientation_style', $attachment->ID) : $style;  
+      'style' => $style  
 	);
 }
 
