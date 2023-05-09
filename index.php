@@ -1,5 +1,5 @@
 <?php get_header();  ?>
-
+hello index
 <main class="home">
   <div id="intro-hero-text"><span>Mark Rabadan</span></div>
   <div class="nav">
