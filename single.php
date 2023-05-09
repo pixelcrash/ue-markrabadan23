@@ -1,15 +1,15 @@
 <?php get_header();  ?>
 
 <header>
-	<?php get_template_part('parts/swiperjs', 'navV4'); ?>
+  <?php get_template_part('parts/main', 'navigation'); ?>
 </header>
 
-<main class="slideshow">
-  <?php get_template_part('parts/swiperjs', 'sliderV4'); ?>
+<main>
+  <?php get_template_part('parts/landing', 'page'); ?>
 </main>
 
 <footer>
-		<?php get_template_part('parts/swiperjs', 'metaV4'); ?>
+  <?php get_template_part('parts/main', 'footer'); ?>
 </footer>
 
 
