@@ -1,18 +1,11 @@
-<?php
-
-require_once(get_template_directory().'/functions/navigations.php'); 
-require_once(get_template_directory().'/functions/cleanup.php'); 
-require_once(get_template_directory().'/functions/enqueues.php'); 
-require_once(get_template_directory().'/functions/ue-images.php'); 
-
-function getJS($filename){
-	echo get_template_directory_uri() . "/magic/" . $filename . ".js";
-}
-
-function getCSS($filename){
-	echo get_template_directory_uri() . "/makeup/" . $filename . ".css";
-}
-
+<?php 
+	
+add_theme_support( 'post-thumbnails' );
+add_image_size ( 'XS', 480 , 480 , false ) ;
+add_image_size ( 'S', 960 , 960 , false ) ;
+add_image_size ( 'M', 1280 , 1280 , false ) ;
+add_image_size ( 'L', 1920 , 1920 , false ) ;
+add_image_size ( 'XL', 2400 , 2400 , false ) ;
 
 function ue_get_image( $attachment_id ) {
 
@@ -40,6 +33,11 @@ function ue_get_image( $attachment_id ) {
 	    'description' => $attachment->post_content,
 	    'href' => get_permalink( $attachment->ID ),
 	    'src' => $attachment->guid,
+      'srcSX' => wp_get_attachment_image_src($attachment->ID, 'XS'),
+      'srcS' => wp_get_attachment_image_src($attachment->ID, 'S'),
+      'srcM' => wp_get_attachment_image_src($attachment->ID, 'M'),
+      'srcL' => wp_get_attachment_image_src($attachment->ID, 'L'),
+      'srcXL' => wp_get_attachment_image_src($attachment->ID, 'XL'),
 	    'title' => $attachment->post_title,
 			'width' => $size['width'],
 			'height' => $size['height'],
@@ -47,3 +45,9 @@ function ue_get_image( $attachment_id ) {
 			'ratio' => $ratio
 	);
 }
+
+
+
+
+
+?>
