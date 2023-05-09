@@ -1,11 +1,15 @@
 <?php get_header();  ?>
-front page
+
 <header>
   <?php get_template_part('parts/main', 'navigation'); ?>
 </header>
 
-<main class="text">
-  <?php the_content(); ?>
+<main class="front-page">
+  <div class="wrapper">
+    <?php $i = get_post_thumbnail_id(); ?>
+    <?php $img = ue_get_image( $i ); ?>
+    <img src="<?=$img['srcL'][0]; ?>">
+  </div>
 </main>
 
 <footer>
