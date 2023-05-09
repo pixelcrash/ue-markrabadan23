@@ -10,7 +10,7 @@
   if($ps):
 ?>
 <ul>
-  <?php foreach($ps as $p: ?>
+  <?php foreach($ps as $p): ?>
   <li><a href="">(1) project one <?php var_dump($p); ?></a></li>
   <?php endforeach; ?>
 </ul>
