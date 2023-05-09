@@ -25,6 +25,12 @@ function ue_get_image( $attachment_id ) {
 	if( $size['width'] == $size['height'] ):
 		$orientation = 2;
 	endif;
+
+  if($orientation = 0):
+    $style = "landscape centered";
+  else:
+    $style = "portrait centered";
+  endif:
 	
 
 	return array(
@@ -42,7 +48,8 @@ function ue_get_image( $attachment_id ) {
 			'width' => $size['width'],
 			'height' => $size['height'],
 			'orientation' => $orientation,
-			'ratio' => $ratio
+			'ratio' => $ratio,
+      'style' => ( get_field('orientation_style', $attachment->ID) ) ? get_field('orientation_style', $attachment->ID) : $style;
 	);
 }
 
