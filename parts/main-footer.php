@@ -12,12 +12,14 @@
 ?>
 <ul>
   <?php foreach($ps as $p): ?>
+  <?php $i = get_post_thumbnail_id( $p ); ?>
+  <?php $img = ue_get_image( $i ); ?>
   <li>
-    <a href="<?php echo get_permalink( $p ); ?>">
-      (<?=$ctn; ?>) <?php echo get_the_title($p); $ctn++;?>
+    <a href="<?php echo get_permalink( $p ); ?>" data-img="<?=$img['src']; ?>" data-style="">
+      (<?=$ctn; ?>) <?php echo get_the_title($p); ?>
     </a>
   </li>
-  <?php endforeach; ?>
+  <?php $ctn++; endforeach; ?>
 </ul>
 
 <?php endif; ?>
