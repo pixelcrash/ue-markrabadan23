@@ -16,7 +16,7 @@
   <?php $img = ue_get_image( $i ); ?>
   <li>
     <?php var_dump($img); ?>
-    <a href="<?php echo get_permalink( $p ); ?>" data-img="<?=$img['srcL']; ?>" data-style="">
+    <a href="<?php echo get_permalink( $p ); ?>" data-img="<?=$img['srcL'][0]; ?>" data-style="">
       (<?=$ctn; ?>) <?php echo get_the_title($p); ?>
     </a>
   </li>
