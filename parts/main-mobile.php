@@ -22,7 +22,8 @@
     <?php foreach($gallery as $g): ?>
     <?php $gg = ue_get_image( $g ); ?>
     <li>
-      <img src="<?=$g['srcM'][0]; ?>" alt="<?=$g['alt']; ?>">
+
+      <img src="<?=$gg['srcM'][0]; ?>" alt="<?=$gg['alt']; ?>">
     </li>
     <?php endforeach; ?>
     <?php endif; ?>
