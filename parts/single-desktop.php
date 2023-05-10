@@ -17,4 +17,9 @@
     <span id="current">1<span> / <span id="total">10</span> <a href="#" id="popup">[more information]</a>
   </div>
   <?php endif; ?>
+
+  <div class="popup">
+    <?php echo get_the_content(); ?>
+  </div>
+
 </main>
