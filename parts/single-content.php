@@ -13,6 +13,6 @@
 </ul>
 
 <div class="counter">
-  <span id="current">1<span> / <span id="total">10</span>
+  <span id="current">1<span> / <span id="total">10</span> <a href="#" id="popup">[more information]</a>
 </div>
 <?php endif; ?>

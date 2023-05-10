@@ -1,17 +1,11 @@
 <?php get_header();  ?>
 
-<header>
-  <?php get_template_part('parts/main', 'navigation'); ?>
-</header>
+<?php get_template_part('parts/main', 'navigation'); ?>
 
-<main>
-  <?php get_template_part('parts/single', 'content'); ?>
-</main>
+<?php get_template_part('parts/single', 'desktop'); ?>
 
-<footer>
-  <?php get_template_part('parts/main', 'footer'); ?>
-</footer>
+<?php get_template_part('parts/main', 'mobile'); ?>
 
-<?php get_template_part('parts/single', 'information'); ?>
+<?php get_template_part('parts/main', 'footer'); ?>
 
 <?php get_footer(); ?>
