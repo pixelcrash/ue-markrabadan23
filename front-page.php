@@ -17,11 +17,13 @@
 -->
 
 <main class="front-page">
-  <?php get_template_part('parts/landing', 'dektop'); ?>
+  <!-- Shows only on Desktop -->
+  <?php get_template_part('parts/landing', 'desktop'); ?>
+  <!-- Shows only on Mobile -->
   <?php get_template_part('parts/main', 'mobile'); ?>
 </main>
 
-<!--  Footer is navigition - but not on mobile -->
+<!--  Footer is navigition - shows only on desktop -->
 <footer>
   <?php get_template_part('parts/main', 'footer'); ?>
 </footer>
