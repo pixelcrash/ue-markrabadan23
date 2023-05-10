@@ -14,7 +14,7 @@
 <?php foreach($ps as $p): ?>
 <?php $i = get_post_thumbnail_id( $p ); ?>
 <?php $img = ue_get_image( $i ); ?>
-<?php $gallery = get_field('gallery', $i); ?>
+<?php $gallery = get_field('gallery', $p); ?>
 <article class="mobile-view" id="project-<?=$i; ?>">
 
   <div class="mobile-slider">
